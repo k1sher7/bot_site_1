@@ -26,7 +26,7 @@ a{
     border-radius: 20px;
     background-color: rgb(227, 181, 125);
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white; 
 }
@@ -46,9 +46,9 @@ a{
 }
 
 img{
-    max-width: 200px;
-    max-height: 250px;
-    border-radius: 20px;
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 10px;
 }
 
 .item{
@@ -56,7 +56,7 @@ img{
     background-color: rgb(255, 183, 159);
     border-radius: 25px;
     color: white;
-    font-size: x-large;
+    font-size: large;
 }
 
 h5{
@@ -64,3 +64,4 @@ h5{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
