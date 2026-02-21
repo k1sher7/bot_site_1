@@ -1,38 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- viewport-fit=cover важен для iPhone с челкой -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Магазин Y2K</title>
+    <!-- Подключаем скрипт Telegram Web App -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="button">
-            <a href="#">Купить сейчас</a>
-            <a href="#">Добавить в корзину</a>
-            <a href="#">Добавить в избранное</a>
+        <div class="button-container">
+            <a href="#" class="tg-btn">Купить сейчас</a>
+            <a href="#" class="tg-btn secondary">В корзину</a>
+            <a href="#" class="tg-btn outline">♥</a>
         </div>
     </header>
-    <div class="block-veapon">
-        <div class="veapon">
-            <div class="item">
-            <h5>Худи y2k серое</h5>
-            <img src="hoodie-gray.jpg" alt="photo">
+    
+    <main class="container">
+        <div class="veapon-grid">
+            <!-- Товар 1 -->
+            <div class="block-veapon">
+                <div class="item">
+                    <h5>Худи y2k серое</h5>
+                    <!-- Заглушка, если картинки нет -->
+                    <img src="https://via.placeholder.com/150" alt="photo">
+                    <div class="price">2500 ₽</div>
+                </div>
+            </div>
+            <!-- Товар 2 -->
+            <div class="block-veapon">
+                <div class="item">
+                    <h5>Худи y2k серое</h5>
+                    <img src="https://via.placeholder.com/150" alt="photo">
+                    <div class="price">2500 ₽</div>
+                </div>
+            </div>
+            <!-- Товар 3 -->
+            <div class="block-veapon">
+                <div class="item">
+                    <h5>Худи y2k серое</h5>
+                    <img src="https://via.placeholder.com/150" alt="photo">
+                    <div class="price">2500 ₽</div>
+                </div>
+            </div>
+            <!-- Товар 4 -->
+            <div class="block-veapon">
+                <div class="item">
+                    <h5>Худи y2k серое</h5>
+                    <img src="https://via.placeholder.com/150" alt="photo">
+                    <div class="price">2500 ₽</div>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <h5>Худи y2k серое</h5>
-            <img src="hoodie-gray.jpg" alt="photo">
-        </div>
-        <div class="item">
-            <h5>Худи y2k серое</h5>
-            <img src="hoodie-gray.jpg" alt="photo">
-        </div>
-        <div class="item">
-            <h5>Худи y2k серое</h5>
-            <img src="hoodie-gray.jpg" alt="photo">
-        </div>
-        </div>
-    </div>
+    </main>
+
+    <script>
+        // Инициализация Telegram Web App
+        const tg = window.Telegram.WebApp;
+        
+        // Разворачиваем приложение на весь экран
+        tg.expand(); 
+        
+        // Устанавливаем цвета хедера под тему пользователя
+        tg.setHeaderColor(tg.themeParams.secondary_bg_color); 
+    </script>
 </body>
 </html>
