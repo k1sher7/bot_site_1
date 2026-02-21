@@ -131,3 +131,9 @@ img {
     color: var(--tg-theme-hint-color, #888);
     font-size: 14px;
 }
+
+.button_item{
+    background-color: rgb(255, 183, 159);
+    font-size: large;
+}
+
